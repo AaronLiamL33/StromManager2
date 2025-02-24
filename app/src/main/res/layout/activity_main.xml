@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<Button  SIGNOUT
+        android:id="@+id/buttonSignOut"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="62dp"
+        android:layout_height="66dp"
+        android:drawableTop="@mipmap/ic_signout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonCamera"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="80dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/avatarPicture"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_avatar" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="386dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+
+   
+
+
+
+    <TextView
+        android:id="@+id/usernamedisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textFontWeight="@integer/material_motion_duration_medium_1"
+        android:textSize="40dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonZaehler"
+        android:layout_width="125dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Zählerstand erfassen"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barChart"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/zaehlerstandhistory"
+        android:layout_width="125dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Zählerstand"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toStartOf="@+id/buttonKwRechner"
+        app:layout_constraintStart_toEndOf="@+id/buttonZaehler"
+        app:layout_constraintTop_toBottomOf="@+id/barChart"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonKwRechner"
+        android:layout_width="125dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Rechner"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barChart"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
