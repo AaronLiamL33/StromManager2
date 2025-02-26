@@ -30,7 +30,7 @@
             android:exported="true"></activity>
 
          <activity
-            android:name=".model.user.ZaehlerstandErfassen.ZaehlerstandErfassen"
+            android:name=".model.user.zaehlerstandErfassen.ZaehlerstandErfassen"
             android:exported="true"
             android:label="Erfasse Zählerstand" />
 

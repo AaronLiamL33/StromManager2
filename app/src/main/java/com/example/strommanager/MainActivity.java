@@ -9,7 +9,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.strommanager.model.kwrechner.KwRechner;
-import com.example.strommanager.model.user.ZaehlerstandErfassen.ZaehlerstandErfassen;
+import com.example.strommanager.model.user.zaehlerstandErfassen.ZaehlerstandErfassen;
 import com.example.strommanager.model.user.login.Login;
 import com.example.strommanager.model.zaehlerstand.ZaehlerstandHistory;
 import com.github.mikephil.charting.charts.BarChart;
@@ -29,8 +29,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;

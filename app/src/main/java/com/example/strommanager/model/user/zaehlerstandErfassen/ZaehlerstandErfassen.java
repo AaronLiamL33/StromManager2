@@ -1,27 +1,20 @@
-package com.example.strommanager.model.user.ZaehlerstandErfassen;
+package com.example.strommanager.model.user.zaehlerstandErfassen;
 
 import android.app.DatePickerDialog;
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.example.strommanager.retrofit.RetrofitService;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.strommanager.model.zaehlerstand.Zaehlerstand;
 import com.example.strommanager.R;
-import com.example.strommanager.model.user.User;
-import com.example.strommanager.model.user.helpers.MD5Converter;
-import com.example.strommanager.model.user.login.Login;
 import com.example.strommanager.retrofit.UserApi;
-import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.Calendar;
 
